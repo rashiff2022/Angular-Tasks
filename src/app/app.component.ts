@@ -23,4 +23,8 @@ export class AppComponent {
   get password(){
     return this.loginForm.get('password');
   }
+
+  title: string ="Structural Directives";
+
+  courses = [{id: 1, name: "Angular" , skill: "Front End"},{id: 2, name: "Node" , skill: "Back End"},{id: 3, name: "Mongodb" , skill: "Database"}];
 }

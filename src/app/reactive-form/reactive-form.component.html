@@ -1,0 +1,27 @@
+<div class="frm">
+<div class="container">
+    <form [formGroup] ="loginForm" (ngSubmit)="login()">
+        <h2>  {{title}}   </h2>
+        <input type="text" placeholder="Enter name" formControlName="user">
+        <br>
+        <span *ngIf="user && user.invalid && user.touched"> <b>*Enter Valid Name</b></span>
+        <br>
+        <br>
+        <input type="password" placeholder="Enter password" formControlName="password">
+        <br>
+        <span *ngIf = "password && password.invalid && password.touched "> <b>*Enter Valid Password</b></span>
+        <br>
+        <br>
+        <div>
+            <button [disabled]="loginForm.invalid"> Submit</button>
+        </div>
+        
+        
+    </form>
+</div>
+</div>
+
+
+
+
+

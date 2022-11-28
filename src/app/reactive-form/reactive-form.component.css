@@ -1,0 +1,45 @@
+.frm{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }   
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 12px;
+    border: 2px solid green;
+    background-color: rgb(217, 223, 230);
+    width: 300px;
+    align-content: center;
+    border-radius: 5px;
+}
+
+h2{ 
+    color: green;
+    text-align: center;
+}
+
+.container input {
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.container span {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+button {
+    margin-bottom: 15px;
+    padding: 8px;
+     background-color: green;
+     color : white;
+     border-radius: 2px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+}

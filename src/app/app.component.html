@@ -1,15 +1,8 @@
-<div class="container">
-<form [formGroup]= "loginForm" (ngSubmit)="loginUser()">
-    <input type="text" placeholder="enter email" formControlName="user">
-    <br>
-    <span  style="color: red;" *ngIf = "user && user.invalid && user.touched "> Enter valid Email</span>
-    <br>
-    <br>
-    <input type="password" placeholder="enter password" FormControlName ="password">
-    <br>
-    <span  style="color: red;" *ngIf = "password && password.invalid && password.touched "> Enter valid Password</span>
-    <br>
-    <br>
-    <button [disabled]="loginForm.invalid">Login</button>
-</form>
+<div>
+    <app-reactive-form> 
+        
+    </app-reactive-form>
 </div>
+
+
+
